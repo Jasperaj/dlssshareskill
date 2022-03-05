@@ -7,7 +7,7 @@ from magic import cookie
 
 def main():
     dl = Skillshare(cookie)
-    course_url = "https://www.skillshare.com/classes/The-Art-of-Company-Valuation-Advanced-course/1780499879"
+    course_url = sys.argv[1]
     dl.download_course_by_url(course_url)
 
 
